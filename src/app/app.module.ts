@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './UI/sidebar/sidebar.component';
 import { NavbarComponent } from './UI/navbar/navbar.component';
+import { DashboardComponent } from './UI/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
