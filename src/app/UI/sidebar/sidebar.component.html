@@ -1,0 +1,65 @@
+<div [className]="isOpen ? 'sidebar open' : 'sidebar closed'">
+  <div *ngIf="isOpen" class="sidebar-layout">
+    <button class="item-button-sidebar">
+      <div class="user-profile-picture">
+        <mat-icon class="customIconPerson">person
+        </mat-icon>
+      </div>
+      <div class="personal-data-container">
+       <div class="name"> hello 1</div>
+       <div class="role">hello 2</div>
+      </div>
+    </button>
+    <button  routerLink="/app/help-faqs"  class="item-button-sidebar" (click)="onSideBarButtonClick()">
+      <mat-icon class="mat-icon">
+        help
+      </mat-icon>
+      <div class="item-container">
+        Help and FAQ's
+      </div>
+      <mat-icon class="chevron-right">
+        chevron_right
+      </mat-icon>
+    </button>
+    <!-- <button class="item-button-sidebar">
+      <mat-icon class="mat-icon">
+        settings
+      </mat-icon>
+      <div class="item-container">
+        Application Settings
+      </div>
+      <mat-icon class="chevron-right">
+        chevron_right
+      </mat-icon>
+    </button> -->
+    <button  routerLink="/app/about"  class="item-button-sidebar" (click)="onSideBarButtonClick()">
+      <mat-icon class="mat-icon">
+        error_outline
+      </mat-icon>
+      <div class="item-container">
+        About
+      </div>
+      <mat-icon class="chevron-right">
+        chevron_right
+      </mat-icon>
+    </button>
+    <button routerLink="/app/terms-and-conditions" (click)="onSideBarButtonClick()" class="item-button-sidebar">
+      <mat-icon class="mat-icon">
+        short_text
+      </mat-icon>
+      <div class="item-container">
+        Terms and Conditions
+      </div>
+      <mat-icon class="chevron-right">
+        chevron_right
+      </mat-icon>
+    </button>
+    <button (click)="logoutHandler()" class="item-button-sidebar">
+      <div class="item-container log-out">
+        Cerrar sesión
+      </div>
+     <mat-icon class="exit-icon">exit_to_app</mat-icon>
+    </button>
+  </div>
+</div>
+<!-- <div *ngIf="isOpen" class="clickToggle"></div> -->
