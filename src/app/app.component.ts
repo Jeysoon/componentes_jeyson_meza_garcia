@@ -21,8 +21,6 @@ export class AppComponent implements OnInit{
   }
 
   onProgramatically(){
-    // this.status = event;
-    // this.programatically = event;
     this.status = !this.status;
     this.programatically = !this.programatically;
   }
