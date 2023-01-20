@@ -1,1 +1,5 @@
-<p>dashboard works!</p>
+<div class="grid-container">
+<div *ngFor="let country of data">
+  <app-card [cardInfo]="country"></app-card>
+</div>
+</div>
